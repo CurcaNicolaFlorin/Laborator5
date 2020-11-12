@@ -1,0 +1,131 @@
+<DOCTYPE html>
+    <html>
+        <head>
+        <title>PaginaPersonala</title>
+        <style>
+            *{
+               margin:0;
+               padding:0;
+               box-sizing: border-box;
+               }
+               html{
+              font-size: 10px;
+              font-family: "Lato", Arial, sans-serif;
+              }
+              h1{
+            font-size: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+            position: absolute;
+            top: 15%;
+            left:50%;
+            transform: translate(-50%, -50%);
+            text-align:center;
+            color:#333533;
+              }
+              #picture1{
+                  position:absolute;
+                  top:25%;
+                  left:40%;
+                  width:300px;
+                  height:200px;
+                  border-radius:10px;
+                  
+              }
+              #picture2{
+                  position:absolute;
+                  top:25%;
+                  left:40%;
+                  width:300px;
+                  height:200px;
+                  border-radius:10px;
+                  
+              }
+             
+              .box{
+                  position:absolute;
+                  top:78%;
+                  left:38%;
+                  font-size:20px;
+                  color:red;
+              }
+              .box1{
+                  position:absolute;
+                  top:60%;
+                  left:39%;
+                  font-size:20px;
+                  color:red;
+                  border: solid 5px;
+                  padding: 20px 60px;
+                  border-radius:10px;
+                  box-shadow:6px 9px 5px 0px rgba(0,0,0,0.36);
+              }
+                    .boxbox{
+                    background-color: #747428;
+                    position: absolute;
+                    top:0%;
+                    bottom:95%;
+                    left:0;
+                    right: 0%;
+                    box-shadow:6px 9px 5px 0px rgba(0,0,0,0.36);
+                    transition:  height 6s;
+                    }
+                    .boxbox:hover {
+                        height: 70px;
+                    }
+                    .changecontent{
+                        position:absolute;
+                        top:80%;
+                        left:40%;
+
+                    }
+                    #line1{
+                        position:absolute;
+                        top:50%;
+                        left:20%;
+                        
+                    }
+                   
+        </style>
+       <script>
+        function showMore(){
+            document.getElementById("line1").innerHTML = "<table border='1' onmouseout='showLess()'><tr><td>Varsta 18</td></tr></table>";
+        }
+        
+        function showLess(){
+            document.getElementById("line1").innerHTML = "<table border='1' onmouseover='showMore()'><tr><td>Anul 2002</td></tr></table>";
+        }
+        </script>
+        </head>
+        <body>
+            <img src="minimalistic_00385599.jpg" id="picture1">
+            <img src="wp6006090.png" id="picture2">
+        <h1>Curca Nicola Florin<br>
+        Web design</h1>
+
+        
+        <div class="box1">
+        <button onclick="window.location.href='https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3103.pdf'" class="button1">Fizica</button>
+        <button onclick="window.location.href='https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3105.pdf'" class="button2">CCP</button>
+        <button onclick="window.location.href='https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3106.pdf'" class="button3">Informatica Aplicata</button>
+</div>
+        <div class="box">
+            <h2>Contact me </h2>
+            <a href="https://www.google.com/search?q=yahoo+mail&oq=&sourceid=chrome&ie=UTF-8">florin4u4me@yahoo.com</a>
+            <a href="florinnicola.ddns.net">My WebSite</a>
+        </div>
+        <div class="boxbox">
+        </div>
+
+
+
+        <div id="line1">
+            <table onmouseover="showMore()" border="1">
+                <tr>  
+                    <td>Anul 2002</td>
+                </tr>
+            </table>
+        </div
+        </body>
+   
+        </html>
